@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fff5f4" />
+  <meta name="description" content="A little birthday surprise, made with love." />
+  <title>Happy Birthday, My Love ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/config.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Back to top">♡ <span>Just for you</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#memories">Memories</a><a href="#letter">My letter</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <span class="eyebrow">A little surprise, made with all my heart</span>
+        <h1 id="hero-title">Happy Birthday,<br><em id="wife-name">My Love</em><span class="heart-mark"> ♥</span></h1>
+        <p id="hero-message">Every day with you feels like the most beautiful chapter of my life.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#memories">Our little story <span aria-hidden="true">↗</span></a><button class="btn btn-outline" id="celebrate-btn" type="button">Make a wish ✨</button></div>
+        <p class="tiny-note">Scroll down — there's something special waiting for you ♡</p>
+      </div>
+      <div class="hero-photo-wrap"><div class="photo-frame"><img src="assets/images/wedding.jpg" alt="Our special wedding memory" fetchpriority="high" /></div><div class="floating-tag">Forever my favorite person ♡</div></div>
+    </section>
+    <section class="intro" aria-label="Birthday wish"><span class="decorative-star">✦</span><p>Of all the beautiful moments life has given me, <em>loving you</em> will always be my favorite.</p><span class="decorative-star">✦</span></section>
+    <section class="memories section" id="memories" aria-labelledby="memories-title"><div class="section-heading"><span class="eyebrow">A collection of us</span><h2 id="memories-title">Our beautiful <em>memories</em></h2><p>Three little moments. A thousand reasons to smile.</p></div><div class="memory-grid" id="memory-grid"></div></section>
+    <section class="letter-section section" id="letter" aria-labelledby="letter-title"><div class="letter-inner"><div class="letter-icon" aria-hidden="true">✉</div><span class="eyebrow">A message from my heart</span><h2 id="letter-title">One last <em>surprise</em></h2><p>Some things are better said from the heart.</p><button type="button" class="btn btn-primary" id="open-letter">Open your love letter ♡</button></div></section>
+  </main>
+  <footer>Made with <span aria-label="love">♥</span> just for <span id="footer-name">you</span> · <span id="year"></span></footer>
+  <dialog id="letter-dialog" aria-labelledby="dialog-title"><div class="dialog-content"><button class="close-dialog" id="close-letter" aria-label="Close letter" type="button">×</button><span class="eyebrow">To my favorite person</span><h2 id="dialog-title">My dearest <em id="letter-name">love</em>,</h2><div id="letter-body" class="letter-body"></div><p class="letter-signature" id="signature">Forever yours ♡</p></div></dialog>
+  <div id="confetti-layer" aria-hidden="true"></div>
+</body>
+</html>
